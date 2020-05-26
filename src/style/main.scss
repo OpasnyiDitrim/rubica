@@ -1698,6 +1698,8 @@ li {
     left: 10px;
     transform: rotate(180deg);
 }
+
+
 .goods{
     max-width: 1560px;
     flex-wrap: wrap;
@@ -1723,10 +1725,11 @@ li {
             top: 20px;
             right: 16px;
             font-size: 57px;
-            font-weight: 700;
+            font-weight: normal;
             background-size: cover;
             color:white;
             padding: 10px;
+            font-family: 'BalloonExtra-Bold';
         }
 
         &-desc{
@@ -2914,6 +2917,50 @@ li {
     .ideas__lockers{
         padding-left: 20px;
         padding-right: 20px;
+    }
+    /*goods*/
+    .filter{
+        max-width: 1260px;
+        margin: 0 auto;
+    }
+    
+    .goods{
+        max-width: 1260px;
+    }
+    .goods__item{
+        max-width: 400px;
+    }
+    .goods__item-slider{
+        max-height: 320px;
+    }
+    .goods__item-desc{
+        padding: 11px 30px 11px;
+    }
+    .goods__item-prices-price{
+        font-size: 28px;
+    }
+    .goods__item-prices-old-price{
+        font-size: 18px;
+    }
+    .goods-features-container{
+        max-width: 1280px;
+        padding-left: 10px;
+        padding-right: 50px;
+    }
+    .feedback {
+        max-width: 1280px;
+    }
+    .feedback__info{
+        width: 830px;
+        background-position: right bottom;
+        background-size: 250px;
+        padding-left: 60px;
+    }
+    .feedback__title{
+        font-size: 30px;
+    }
+    .feedback .feedback__features {
+        margin-top: 80px;
     }
 }
 
