@@ -1,7 +1,8 @@
 //= template/header.html
 <main class="main">
-<div class="container">
+<div class="container container_payment">
     <div class="payment-banner page-banner">
+        <div class="payment-banner__content">
         <h1 class="page-banner__h1">Оплата</h1>
         <p class="payment-banner__p page-banner__p">Оплачивайте кухню картой прямо на сайте или наличными выездному менеджеру. 
             Для тех, кто не может оплатить всю кухню разом, мы предоставляем беспроцентную рассрочку или кредит. Купите новую кухню уже сегодня.</p>
@@ -25,6 +26,7 @@
                 <p class="payment-banner__benefits-item-text d-flex">Представители банка <br>в нашем офисе</p>
             </li>
         </ul>
+    </div>
     </div>
     <div class="payment-content d-flex">
         <div class="payment-content__credit">
@@ -58,6 +60,7 @@
         </div>
         
         <div class="payment-content__form">
+            
             <div class="payment-content__form-header">
                 <ul class="payment-content__form-list d-flex">
                     <li class="payment-content__form-list-item">
@@ -72,8 +75,9 @@
                     </li>
                 </ul>
             </div>
+            
             <form class="payment-content__callback-form form">
-                
+                <div class="payment-content__form-container">
                 <h3 class="form__title">Оставить заявку <br>на оформление рассрочки</h3>
                 <div class="form__grid row d-flex wrap">
                     <div class="form__group form__group_large col">
@@ -86,6 +90,7 @@
                
                 <button type="submit" class="payment-content__form-btn form__btn btn btn-bg btn-bg-blue">Оставить заявку</button>
                 <p class="form__term term">Нажимая кнопку «оставить заявку», вы соглашаетесь с <a href="#" class="term__link">Политикой конфиденциальности</a></p>
+            </div>
             </form>
         </div>
     </div>

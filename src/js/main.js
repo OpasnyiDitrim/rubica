@@ -201,18 +201,42 @@ function owlCarouselSliderideas(owlSlider) {
         });
 
     }
-
+    
 }
-$(document).ready(function(){
+//слайдер в ideas на маленьких экранах
     $(window).on('resize', function(){
-     if($(window).width() <= 768) {
+     if($(window).width() <= 553) {
      $('.ideas__lockers-list').addClass('ideas-lockers-js');
+     $('.ideas__layout-list').addClass('ideas-lockers-js');
      }
       else {
      $('.ideas__lockers-list').removeClass('ideas-lockers-js');
+     $('.ideas__layout-list').removeClass('ideas-lockers-js');
      }
      }).trigger('resize');
-   });
+//кнопка развернуть-свернуть в ideas   
+
+var more = document.querySelectorAll(".prod-content__text-more");
+var cont = document.querySelectorAll(".prod-content__text-container");
+var ideas = document.getElementById('target-js');
+     
+    ideas.addEventListener('click', function(event){
+        target = event.target;
+
+        for (var i=0; i<more.length; i++){
+            if (target == more[i]){
+                if (cont[i].classList.contains('prod-content__text-container-active')){
+                    cont[i].classList.remove('prod-content__text-container-active');
+                    target.innerHTML = 'развернуть';
+
+                }
+                else {
+                    cont[i].classList.add('prod-content__text-container-active');
+                    target.innerHTML = 'Свернуть';
+                }
+            }
+        }
+    } );
 
 
 function owlCarouselSliderProduct(owlSlider) {
